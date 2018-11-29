@@ -1,0 +1,567 @@
+
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ cat > a.txt
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ vi a.txt
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ git add-i
+git: 'add-i' is not a git command. See 'git --help'.
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ git add -i
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 2
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 1
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 7
+Bye.
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ git add a.txt
+warning: LF will be replaced by CRLF in a.txt.
+The file will have its original line endings in your working directory.
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   a.txt
+
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ git commit -m "Dron"
+[master bcb6428] Dron
+ 1 file changed, 15 insertions(+)
+ create mode 100644 a.txt
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ git push origin head
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 330 bytes | 330.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:Ankitj0796/Dron.git
+   92f557c..bcb6428  head -> master
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ vi a.txt
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ git add -i
+warning: LF will be replaced by CRLF in a.txt.
+The file will have its original line endings in your working directory.
+           staged     unstaged path
+  1:    unchanged        +1/-1 a.txt
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 2
+warning: LF will be replaced by CRLF in a.txt.
+The file will have its original line endings in your working directory.
+           staged     unstaged path
+  1:    unchanged        +1/-1 a.txt
+Update>> 1
+           staged     unstaged path
+* 1:    unchanged        +1/-1 a.txt
+Update>>
+warning: LF will be replaced by CRLF in a.txt.
+The file will have its original line endings in your working directory.
+updated 1 path
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 7
+Bye.
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   a.txt
+
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+Unpacking objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+From github.com:Ankitj0796/Dron
+   bcb6428..a9f42f7  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+        a.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating bcb6428..a9f42f7
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ cat a.txt
+
+bbbbbbbbbbbb
+aaaaaaaaaaaa
+ccccccccc
+fr
+fgh
+dfghf
+hf
+gh
+fgh
+rth
+fg
+hf
+hf
+ankit jain
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/Dron (master)
+$ cd ..
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github
+$ cd ..
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d
+$ git clone git@github.com:ankit10195/ironemen.git
+Cloning into 'ironemen'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 13 (delta 0), reused 9 (delta 0), pack-reused 0
+Receiving objects: 100% (13/13), done.
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d
+$ ls
+'$RECYCLE.BIN'/   app/           FTP/      ironemen/
+ ankkkkk/         employee.csv   github/  'System Volume Information'/
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d
+$ cd ironemen/
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ ls
+one.txt  q.txt  readme
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ vi one.txt
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   one.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git add -i
+           staged     unstaged path
+  1:    unchanged        +7/-1 one.txt
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 2
+           staged     unstaged path
+  1:    unchanged        +7/-1 one.txt
+Update>> 1
+           staged     unstaged path
+* 1:    unchanged        +7/-1 one.txt
+Update>>
+updated 1 path
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 7
+Bye.
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git commit -m "added the changes"
+[master c66d36b] added the changes
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git push origin HEAD
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 377 bytes | 377.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:ankit10195/ironemen.git
+   0156489..c66d36b  HEAD -> master
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ vi one.txt
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git pull origin HEAD
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 6 (delta 1), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From github.com:ankit10195/ironemen
+ * branch            HEAD       -> FETCH_HEAD
+error: Your local changes to the following files would be overwritten by merge:
+        one.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating c66d36b..8bd7521
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git stash
+Saved working directory and index state WIP on master: c66d36b added the changes
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git pull origin HEAD
+Warning: Permanently added the RSA host key for IP address '13.229.188.59' to th                                                                                        e list of known hosts.
+From github.com:ankit10195/ironemen
+ * branch            HEAD       -> FETCH_HEAD
+Updating c66d36b..8bd7521
+Fast-forward
+ one.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git stash list
+stash@{0}: WIP on master: c66d36b added the changes
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git stash apply stash{0}
+stash{0} is not a valid reference
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git stash apply stash@{0}
+Auto-merging one.txt
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   one.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git add -i
+           staged     unstaged path
+  1:    unchanged        +6/-1 one.txt
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 2
+           staged     unstaged path
+  1:    unchanged        +6/-1 one.txt
+Update>> 1
+           staged     unstaged path
+* 1:    unchanged        +6/-1 one.txt
+Update>>
+updated 1 path
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 4
+No untracked files.
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 7
+Bye.
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified co                                                                                        mmit
+    --squash <commit>     use autosquash formatted message to squash specified c                                                                                        ommit
+    --reset-author        the commit is authored by me now (used with -C/-c/--am                                                                                        end)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no.                                                                                         (Default: all)
+
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git commit -m "sasas"
+[master 0629d3f] sasas
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ git push origin HEAD
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 397 bytes | 397.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:ankit10195/ironemen.git
+   8bd7521..0629d3f  HEAD -> master
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ vi a.txt
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/ironemen (master)
+$ cd ..
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d
+$ cd github
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github
+$ cd dron
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ ls
+a.txt  ank.txt  readme.md
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ vi a.txt
+
+[1]+  Stopped                 vi a.txt
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From github.com:Ankitj0796/Dron
+   a9f42f7..27100f7  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+        a.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating bcb6428..27100f7
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git pull
+error: Your local changes to the following files would be overwritten by merge:
+        a.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating bcb6428..27100f7
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   a.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .a.txt.swp
+
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   a.txt
+
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git pull
+error: Your local changes to the following files would be overwritten by merge:
+        a.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating bcb6428..27100f7
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git stash
+Saved working directory and index state WIP on master: bcb6428 Dron
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git pull origin HEAD
+From github.com:Ankitj0796/Dron
+ * branch            HEAD       -> FETCH_HEAD
+Updating bcb6428..27100f7
+Fast-forward
+ a.txt | 17 +++++------------
+ 1 file changed, 5 insertions(+), 12 deletions(-)
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git stash list
+stash@{0}: WIP on master: bcb6428 Dron
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git stash apply stash@{0}
+Auto-merging a.txt
+CONFLICT (content): Merge conflict in a.txt
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ vi a.txt
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   a.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git add -i
+           staged     unstaged path
+  1:        +0/-0       +14/-0 a.txt
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 2
+           staged     unstaged path
+  1:        +0/-0       +14/-0 a.txt
+Update>> 1
+           staged     unstaged path
+* 1:        +0/-0       +14/-0 a.txt
+Update>>
+updated 1 path
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 7
+Bye.
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   a.txt
+
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git commit -m "dddd"
+[master 41c5761] dddd
+ 1 file changed, 14 insertions(+)
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git push origin HEAD
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 394 bytes | 394.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:Ankitj0796/Dron.git
+   27100f7..41c5761  HEAD -> master
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+EBHVR01-10+Hvuser@EBHVR01-10 MINGW64 /d/github/dron (master)
